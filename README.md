@@ -1,11 +1,11 @@
-About r-disordr
-===============
+About r-disordr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-disordr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/RobinHankin/disordR
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-disordr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functionality for manipulating values of associative maps.  Ordinary R vectors are unsuitable for working with values of associative maps because elements of an R vector may be accessed by reference to their location in the vector, but associative maps are stored in arbitrary order.  However, when associating keys with values one needs both parts to be in 1-1 correspondence, so one cannot dispense with the order entirely.  The 'disordR' package includes a single S4 class, disord.  This class allows one to perform only those operations appropriate for manipulating values of associative maps and prevents any other operation (such as accessing an element at a particular location).  A useful heuristic is that one is only allowed to access or modify a disord object using a python list comprehension.  The idea is to prevent ill-defined operations on values (or keys) of associative maps, whose order is undefined or at best implementation-specific, while allowing and facilitating sensible operations.  The package is needed for development versions of 'mvp', 'hyper2', 'spray', 'clifford', and 'freealg'.
 
