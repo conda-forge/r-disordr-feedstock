@@ -1,4 +1,4 @@
-{% set version = "0.9-5" %}
+{% set version = "0.9-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/disordR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/disordR/disordR_{{ version }}.tar.gz
-  sha256: c31e5b005de68ef9224935be61b0471648751a3e641d6e082c99c91949846cc8
+  sha256: b5fcdf2cbe3900beab62260072a6ca81576fb058dcd0dd98a3a63eb4653b3e56
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
