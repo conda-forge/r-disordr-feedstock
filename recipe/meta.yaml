@@ -1,4 +1,4 @@
-{% set version = "0.9-8.2" %}
+{% set version = "0.9-8-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/disordR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/disordR/disordR_{{ version }}.tar.gz
-  sha256: 0d292a5483fe3201f533e39f03b5658c481eb7eab4927327b04a37eca2b7cd1f
+  sha256: 973d2b2703e2242a93d5b7e80414a9fa8e2bf54f180303bfcd972df53b7d8901
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
